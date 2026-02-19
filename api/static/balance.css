@@ -5,13 +5,11 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;   /* stack main + footer */
-    min-height: 100vh;        /* full screen height */
+    min-height: 100vh;        /* full viewport height */
     color: white;
-
-    /* Background Image */
+    position: relative;
     background: url("https://images.unsplash.com/photo-1601597111158-2fceff292cdc") no-repeat center center;
     background-size: cover;
-    position: relative;
 }
 
 /* Dark overlay */
@@ -23,17 +21,18 @@ body::before {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.6);
-    z-index: -1;
+    z-index: 0;   /* behind content */
 }
 
 /* Back button top-left */
 a.back-btn {
-    position: absolute;
+    position: fixed;  /* fixed ensures it stays at top-left even on scroll */
     top: 20px;
     left: 20px;
     color: #0055aa;
     text-decoration: none;
     font-weight: bold;
+    z-index: 10;      /* above overlay */
 }
 
 a.back-btn:hover {
@@ -43,12 +42,14 @@ a.back-btn:hover {
 
 /* Main content wrapper */
 main {
-    flex: 1;                       /* push footer down */
+    flex: 1;                     /* push footer down */
     display: flex;
-    flex-direction: column;        /* stack elements */
-    justify-content: center;       /* vertical center */
-    align-items: center;           /* horizontal center */
+    flex-direction: column;
+    justify-content: center;     /* vertical center */
+    align-items: center;         /* horizontal center */
     text-align: center;
+    z-index: 1;                  /* above overlay */
+    position: relative;
 }
 
 /* Balance Card */
@@ -81,4 +82,6 @@ footer {
     background-color: #222;
     color: white;
     flex-shrink: 0;  /* ensure footer is always visible */
+    z-index: 1;      /* above overlay */
+    position: relative;
 }
