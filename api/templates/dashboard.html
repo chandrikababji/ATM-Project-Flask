@@ -10,22 +10,21 @@
 
 </head>
 <body>
-    <center>
-    <h1>ATM Dashboard</h1>
-     <nav>
-        <h3>{{request.cookies.get('user')}}</h3>
+    <main>
+        <h1>ATM Dashboard</h1>
+        <nav>
+            <h3>{{ request.cookies.get('user') }}</h3>
             <a href="{{ url_for('deposit') }}">Deposit</a>
             <a href="{{ url_for('withdraw') }}">Withdraw</a>
             <a href="{{ url_for('balance') }}">Balance</a>
             <a href="{{ url_for('userstatements') }}">Statements</a>
             <a href="{{ url_for('logout') }}">Logout</a>
-     </nav>
+        </nav>
+    </main>
 
-</center>
-
-<footer>
-    &copy; 2026 Saichandrika All rights reserved
-</footer>
-
+    <footer>
+        &copy; 2026 Saichandrika K. All rights reserved
+    </footer>
 </body>
+
 </html>
