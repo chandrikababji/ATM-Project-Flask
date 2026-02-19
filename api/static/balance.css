@@ -37,11 +37,16 @@ p {
 
 /* Link styling */
 a {
-    text-decoration: none;
-    color: #0055aa;
+    position: absolute;   /* position relative to the viewport */
+    top: 20px;            /* distance from top */
+    left: 20px;           /* distance from left */
+    color: #0055aa;       /* blue text */
+    text-decoration: none; /* remove underline */
     font-weight: bold;
-    margin: 20px;
-    display: inline-block;
+    background: none;      /* no background */
+    box-shadow: none;      /* remove any shadow */
+    padding: 0;            /* remove padding */
+    font-size: 16px;
 }
 
 /* Link hover effect */
