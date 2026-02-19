@@ -67,7 +67,7 @@ def deposit():
                         deposit_time=datetime.now() #current time
                         deposit_data=(deposit_amount,deposit_time)
                         statements[username]['deposit_stm'].append(deposit_data)
-                        return redirect(url_for('balance'))
+                        return redirect(url_for('dashboard'))
                     else:
                         return 'amount exceeded'
                 else:
@@ -93,7 +93,7 @@ def withdraw():
                         withdraw_time = datetime.now()  # current time
                         withdraw_data = (withdraw_amount, withdraw_time)
                         statements[username]['withdraw_stm'].append(withdraw_data)
-                        return redirect(url_for('balance'))
+                        return redirect(url_for('dashboard'))
 
                     else:
                         return 'Withdraw amount greater than present balance'
