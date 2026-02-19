@@ -59,12 +59,13 @@ nav a {
 }
 
 nav a:hover {
-    background-color: lightblue;
+    background-color: black;
     transform: scale(1.08);
 }
 
-/* Footer */
 footer {
-    text-align: center;
-    padding: 15px;
+    text-align: center;       /* center horizontally */
+    padding: 10px 0;          /* some spacing */
+    background-color: #222;   /* dark background */
+    color: white;             /* text color */
 }
