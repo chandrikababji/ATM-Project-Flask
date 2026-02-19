@@ -6,7 +6,9 @@ body {
     text-align: center;
 
     /* Background Image */
-    background: url("/static/atm-bg.jpg") no-repeat center center/cover;
+    background: url("https://images.unsplash.com/photo-1601597111158-2fceff292cdc") no-repeat center center;
+background-size: cover;
+
     height: 100vh;
     color: white;
 }
