@@ -1,25 +1,64 @@
-/* style.css */
-
-/* Body styling */
+/* Body Styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f8ff; /* light blue background */
-    color: #003366; /* dark blue text */
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    flex-direction: column;   /* stack main + footer */
+    min-height: 100vh;        /* full screen height */
+    color: white;
+
+    /* Background Image */
+    background: url("https://images.unsplash.com/photo-1601597111158-2fceff292cdc") no-repeat center center;
+    background-size: cover;
+    position: relative;
 }
 
-/* Container for content */
-body > * {
+/* Dark overlay */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+/* Back button top-left */
+a.back-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #0055aa;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a.back-btn:hover {
+    color: #003366;
+    text-decoration: underline;
+}
+
+/* Main content wrapper */
+main {
+    flex: 1;                       /* push footer down */
+    display: flex;
+    flex-direction: column;        /* stack elements */
+    justify-content: center;       /* vertical center */
+    align-items: center;           /* horizontal center */
     text-align: center;
-    background-color: #ffffff; /* white container */
+}
+
+/* Balance Card */
+.balance-card {
+    background-color: #ffffff;
+    color: #003366;
     padding: 40px 60px;
     border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    margin-top: 20px;
 }
 
 /* Heading */
@@ -29,28 +68,17 @@ h2 {
 }
 
 /* Balance text */
-p {
+.balance-card p {
     font-size: 20px;
-    margin-bottom: 30px;
-    color: blue;
+    margin: 0;
 }
 
-/* Link styling */
-a {
-    position: absolute;   /* position relative to the viewport */
-    top: 20px;            /* distance from top */
-    left: 20px;           /* distance from left */
-    color: #0055aa;       /* blue text */
-    text-decoration: none; /* remove underline */
-    font-weight: bold;
-    background: none;      /* no background */
-    box-shadow: none;      /* remove any shadow */
-    padding: 0;            /* remove padding */
-    font-size: 16px;
-}
-
-/* Link hover effect */
-a:hover {
-    background-color: #003366;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+/* Footer */
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    background-color: #222;
+    color: white;
+    flex-shrink: 0;  /* ensure footer is always visible */
 }
