@@ -1,64 +1,75 @@
-/* Body styling */
+/* Body Styling */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f8ff; /* light blue background */
-    color: #003366; /* dark blue text */
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0055aa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-/* Back Link */
+/* Back Button */
 a {
+    position: absolute;
+    top: 20px;
+    left: 20px;
     text-decoration: none;
-    color: #003366;
+    background-color: white;
+    color: #0055aa;
+    padding: 8px 15px;
+    border-radius: 6px;
     font-weight: bold;
-    margin: 20px;
-    display: inline-block;
+    transition: 0.3s ease;
 }
 
-/* Center container */
+a:hover {
+    background-color: #e6e6e6;
+}
+
+/* Form Container */
 center {
-    margin-top: 50px;
+    background-color: white;
+    padding: 40px 60px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 /* Heading */
 h2 {
     color: #0055aa;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
-/* Form container */
-form {
-    background-color: #ffffff; /* white form background */
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    display: inline-block;
-}
-
-/* Input styling */
+/* Input Field */
 input[type="number"] {
-    padding: 10px;
     width: 250px;
+    padding: 12px;
     border: 2px solid #0055aa;
-    border-radius: 5px;
-    margin-bottom: 20px;
+    border-radius: 6px;
     font-size: 16px;
+    outline: none;
 }
 
-/* Button styling */
+input[type="number"]:focus {
+    border-color: #003f80;
+}
+
+/* Button */
 button {
-    padding: 10px 25px;
+    margin-top: 20px;
+    padding: 12px 30px;
     background-color: #0055aa;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 6px;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: 0.3s ease;
 }
 
-/* Button hover effect */
 button:hover {
-    background-color: #003366;
+    background-color: #003f80;
+    transform: scale(1.05);
 }
