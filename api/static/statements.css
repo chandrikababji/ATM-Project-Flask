@@ -1,15 +1,11 @@
-/* style.css */
-
-/* Body styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f8ff; /* light blue background */
-    color: #003366; /* dark blue text */
+    background-color: #f0f8ff; 
+    color: #003366; 
     margin: 0;
     padding: 20px;
 }
 
-/* Link styling */
 a {
     text-decoration: none;
     color: #0055aa;
@@ -18,7 +14,7 @@ a {
     display: inline-block;
 }
 
-/* Headings */
+
 h2 {
     color: #003366;
     margin-bottom: 30px;
@@ -30,34 +26,31 @@ h5 {
     margin-bottom: 10px;
 }
 
-/* Table styling */
 table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 30px;
-    background-color: #ffffff; /* white background for table */
+    background-color: #ffffff; 
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     border-radius: 8px;
     overflow: hidden;
 }
 
-/* Table headers */
+
 th {
-    background-color: #0055aa; /* dark blue header */
+    background-color: #0055aa; 
     color: white;
     padding: 10px;
     text-align: left;
 }
 
-/* Table cells */
 td {
     padding: 10px;
     border-bottom: 1px solid #ddd;
 }
 
-/* Zebra striping for rows */
 tr:nth-child(even) {
-    background-color: #e6f0ff; /* light blue for even rows */
+    background-color: #e6f0ff; 
 }
 
-/* Hover eff*
+

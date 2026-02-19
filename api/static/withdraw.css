@@ -1,15 +1,11 @@
-/* style.css */
-
-/* Body styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f8ff; /* light blue background */
-    color: #003366; /* dark blue text */
+    background-color: #f0f8ff; 
+    color: #003366; 
     margin: 0;
     padding: 0;
 }
 
-/* Link styling */
 a {
     text-decoration: none;
     color: #003366;
@@ -18,27 +14,23 @@ a {
     display: inline-block;
 }
 
-/* Center container */
 center {
     margin-top: 50px;
 }
 
-/* Heading */
 h2 {
     color: #0055aa;
     margin-bottom: 30px;
 }
 
-/* Form container */
 form {
-    background-color: #ffffff; /* white form background */
+    background-color: #ffffff;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     display: inline-block;
 }
 
-/* Input styling */
 input[type="number"] {
     padding: 10px;
     width: 250px;
@@ -48,7 +40,6 @@ input[type="number"] {
     font-size: 16px;
 }
 
-/* Button styling */
 button {
     padding: 10px 25px;
     background-color: #0055aa;
@@ -60,7 +51,6 @@ button {
     transition: background-color 0.3s ease;
 }
 
-/* Button hover effect */
 button:hover {
     background-color: #003366;
 }

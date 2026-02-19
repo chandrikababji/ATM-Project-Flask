@@ -1,6 +1,4 @@
-/* style.css */
 
-/* Body styling */
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f8ff; /* light blue background */
@@ -9,7 +7,6 @@ body {
     padding: 0;
 }
 
-/* Link styling */
 a {
     text-decoration: none;
     color: #003366;
@@ -21,21 +18,22 @@ a:hover {
     background-color: #e6e6e6;
 }
 
-/* Form Container */
 center {
     background-color: white;
     padding: 30px 40px;
     border-radius: 12px;
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+    width: 90%;               /* responsive width */
+    max-width: 400px;         /* max width for large screens */
+    margin: 40px auto;        /* center horizontally with top/bottom spacing */
 }
 
-/* Heading */
+
 h2 {
     color: #0055aa;
     margin-bottom: 25px;
 }
 
-/* Input Field */
 input[type="number"] {
     width: 250px;
     padding: 12px;
@@ -49,7 +47,6 @@ input[type="number"]:focus {
     border-color: #003f80;
 }
 
-/* Button */
 button {
     margin-top: 20px;
     padding: 12px 30px;
@@ -65,4 +62,15 @@ button {
 button:hover {
     background-color: #003f80;
     transform: scale(1.05);
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    background-color: #222;
+    color: white;
+    flex-shrink: 0;  
+    z-index: 1;      
+    position: relative;
 }

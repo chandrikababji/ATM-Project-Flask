@@ -1,18 +1,17 @@
-/* Body Styling */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: column;   /* stack main + footer */
-    min-height: 100vh;        /* full viewport height */
+    flex-direction: column;   
+    min-height: 100vh;        
     color: white;
     position: relative;
     background: url("https://images.unsplash.com/photo-1601597111158-2fceff292cdc") no-repeat center center;
     background-size: cover;
 }
 
-/* Dark overlay */
 body::before {
     content: "";
     position: fixed;
@@ -21,18 +20,17 @@ body::before {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.6);
-    z-index: 0;   /* behind content */
+    z-index: 0; 
 }
 
-/* Back button top-left */
 a.back-btn {
-    position: fixed;  /* fixed ensures it stays at top-left even on scroll */
+    position: fixed;  
     top: 20px;
     left: 20px;
     color: #0055aa;
     text-decoration: none;
     font-weight: bold;
-    z-index: 10;      /* above overlay */
+    z-index: 10;     
 }
 
 a.back-btn:hover {
@@ -40,19 +38,17 @@ a.back-btn:hover {
     text-decoration: underline;
 }
 
-/* Main content wrapper */
 main {
-    flex: 1;                     /* push footer down */
+    flex: 1;                     
     display: flex;
     flex-direction: column;
-    justify-content: center;     /* vertical center */
-    align-items: center;         /* horizontal center */
+    justify-content: center;    
+    align-items: center;         
     text-align: center;
-    z-index: 1;                  /* above overlay */
+    z-index: 1;              
     position: relative;
 }
 
-/* Balance Card */
 .balance-card {
     background-color: #ffffff;
     color: #003366;
@@ -62,26 +58,24 @@ main {
     margin-top: 20px;
 }
 
-/* Heading */
 h2 {
     color: #0055aa;
     margin-bottom: 20px;
 }
 
-/* Balance text */
+
 .balance-card p {
     font-size: 20px;
     margin: 0;
 }
 
-/* Footer */
 footer {
     width: 100%;
     text-align: center;
     padding: 15px 0;
     background-color: #222;
     color: white;
-    flex-shrink: 0;  /* ensure footer is always visible */
-    z-index: 1;      /* above overlay */
+    flex-shrink: 0;  
+    z-index: 1;     
     position: relative;
 }

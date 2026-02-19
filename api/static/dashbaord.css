@@ -1,19 +1,20 @@
-/* Body Styling */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: column;   /* stack main + footer */
-    min-height: 100vh;        /* full screen height */
+    flex-direction: column;   
+    min-height: 100vh;        
     text-align: center;
     color: white;
     background: url("https://images.unsplash.com/photo-1601597111158-2fceff292cdc") no-repeat center center;
     background-size: cover;
     position: relative;
+        justify-content: flex-start; 
+
 }
 
-/* Dark overlay */
 body::before {
     content: "";
     position: fixed;
@@ -25,22 +26,19 @@ body::before {
     z-index: -1;
 }
 
-/* Main wrapper */
 main {
-    flex: 1;                  /* pushes footer down */
+    flex: 1;                  
     display: flex;
     flex-direction: column;
-    justify-content: center;   /* vertical center */
-    align-items: center;       /* horizontal center */
+    justify-content: center;   
+    align-items: center;      
 }
 
-/* Heading */
 h1 {
     margin-top: 50px;
     font-size: 40px;
 }
 
-/* Navigation */
 nav {
     margin-top: 40px;
 }
@@ -62,14 +60,13 @@ nav a:hover {
     transform: scale(1.08);
 }
 
-/* Footer */
 footer {
     width: 100%;
-    text-align: center;        /* center horizontally */
+    text-align: center;        
     padding: 15px 0;
     background-color: #222;
     color: white;
-    flex-shrink: 0;            /* keep visible */
-    z-index: 1;                /* above overlay */
+    flex-shrink: 0;            
+    z-index: 1;                
     position: relative;
 }
