@@ -61,3 +61,14 @@ tr:nth-child(even) {
 }
 
 /* Hover eff*
+/* Footer */
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    background-color: #222;
+    color: white;
+    flex-shrink: 0;  /* ensure footer is always visible */
+    z-index: 1;      /* above overlay */
+    position: relative;
+}
