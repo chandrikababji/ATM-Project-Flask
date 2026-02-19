@@ -9,6 +9,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+        background: url("https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=1600&q=80") no-repeat center center/cover;
+
 }
 
 center {
