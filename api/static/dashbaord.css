@@ -30,9 +30,9 @@ main {
     flex: 1;                  
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* align content at top */
+    justify-content: flex-start; 
     align-items: center;         
-    padding-top: 60px;           /* adjust this to move it down/up */
+    padding-top: 60px;         
 }
 
 
