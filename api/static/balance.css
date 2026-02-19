@@ -38,12 +38,10 @@ p {
 /* Link styling */
 a {
     text-decoration: none;
-    color: #ffffff;
-    background-color: #0055aa;
-    padding: 10px 20px;
-    border-radius: 5px;
+    color: #0055aa;
     font-weight: bold;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin: 20px;
+    display: inline-block;
 }
 
 /* Link hover effect */
