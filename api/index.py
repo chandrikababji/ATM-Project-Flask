@@ -1,6 +1,7 @@
 from flask import Flask,request,redirect,url_for,render_template,make_response
 from datetime import datetime
-app=Flask(__name__)
+app = Flask(__name__, template_folder="templates", static_folder="static")
+
 users={}
 statements={}
 @app.route('/')  #base and first route   #we can only render one file for one route
