@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/api/static/balance.css">
 </head>
 <body>
-    <body>
-    <h2>{{ username }}'s Current Balance</h2>
-    <p>Balance: {{ balance_amt}}</p>
-    <a href="{{ url_for('dashboard') }}">Back to Dashboard</a>
-</body>
+    <a href="/dashboard">Back</a>
+
+<center>
+    <h2>Your Balance</h2>
+
+    <div class="balance-card">
+        <p>Current Balance: ₹ {{ balance }}</p>
+    </div>
+</center>
+
 </body>
 </html>
