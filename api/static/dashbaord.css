@@ -64,8 +64,9 @@ nav a:hover {
 }
 
 footer {
-    text-align: center;       /* center horizontally */
+    text-align: center;       /* center text horizontally */
     padding: 10px 0;          /* some spacing */
     background-color: #222;   /* dark background */
     color: white;             /* text color */
+    width: 100%;              /* full width */
 }
