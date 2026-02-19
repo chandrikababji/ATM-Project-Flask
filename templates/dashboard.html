@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/static/dashbaord.css">
+</head>
+<body>
+    <center>
+    <h1>ATM Dashboard</h1>
+     <nav>
+        <h3>{{request.cookies.get('user')}}</h3>
+            <a href="{{ url_for('deposit') }}">Deposit</a>
+            <a href="{{ url_for('withdraw') }}">Withdraw</a>
+            <a href="{{ url_for('balance') }}">Balance</a>
+            <a href="{{ url_for('userstatements') }}">Statements</a>
+            <a href="{{ url_for('logout') }}">Logout</a>
+     </nav>
+
+</center>
+
+</body>
+</html>

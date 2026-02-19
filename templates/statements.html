@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statements</title>
+    <link rel="stylesheet" href="/static/statements.css">
+</head>
+<body>
+    <a href="/dashboard">Back</a>
+    <h2>Transaction Statement</h2>
+
+<h5>Deposit Statements</h5>
+<table border="2">
+    <tr>
+        <th>Amount</th>
+        <th>Time</th>
+    </tr>
+    {% for i in deposit_statements %}
+    <tr>
+        <td>{{ i[0] }}</td>
+        <td>{{ i[1] }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+<h5>Withdraw Statements</h5>
+<table border="2">
+    <tr>
+        <th>Amount</th>
+        <th>Time</th>
+    </tr>
+    {% for i in withdraw_statements %}
+    <tr>
+        <td>{{ i[0] }}</td>
+        <td>{{ i[1] }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+
+
+
+
+    
+</body>
+</html>

@@ -1,0 +1,79 @@
+/* style.css */
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* light blue background */
+    color: #003366; /* dark blue text */
+    margin: 0;
+    padding: 0;
+}
+
+/* Link styling */
+a {
+    text-decoration: none;
+    color: #0055aa;
+    font-weight: bold;
+    margin: 20px;
+    display: inline-block;
+}
+
+/* Center the form */
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+/* Form container styling */
+form center {
+    background-color: #ffffff; /* white background */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+h2 {
+    color: #0055aa;
+    margin-bottom: 30px;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="password"] {
+    width: 250px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #0055aa;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Input focus effect */
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #003366;
+    box-shadow: 0 0 5px #0055aa;
+    outline: none;
+}
+
+/* Button styling */
+button {
+    padding: 10px 25px;
+    background-color: #0055aa;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #003366;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
