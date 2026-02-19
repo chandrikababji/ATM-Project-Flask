@@ -1,18 +1,14 @@
-/* style.css */
-
-/* Body styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f8ff; /* light blue background */
-    color: #003366; /* dark blue text */
+    background-color: #f0f8ff; 
+    color: #003366; 
     margin: 0;
     padding: 0;
 }
 
-/* Link styling */
 a {
     text-decoration: none;
-    color: red;
+    color: #003366;
     font-weight: bold;
     margin: 20px;
     display: inline-block;
@@ -35,7 +31,6 @@ form center {
     text-align: center;
 }
 
-/* Heading */
 h2 {
     color: #0055aa;
     margin-bottom: 30px;
