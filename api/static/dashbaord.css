@@ -30,9 +30,11 @@ main {
     flex: 1;                  
     display: flex;
     flex-direction: column;
-    justify-content: center;   
-    align-items: center;      
+    justify-content: flex-start; /* align content at top */
+    align-items: center;         
+    padding-top: 60px;           /* adjust this to move it down/up */
 }
+
 
 h1 {
     margin-top: 50px;
