@@ -12,18 +12,12 @@ body {
 
 /* Back Button */
 a {
-    position: absolute;
-    top: 20px;
-    left: 20px;
     text-decoration: none;
-    background-color: white;
-    color: #0055aa;
-    padding: 8px 15px;
-    border-radius: 6px;
+    color: #003366;
     font-weight: bold;
-    transition: 0.3s ease;
+    margin: 20px;
+    display: inline-block;
 }
-
 a:hover {
     background-color: #e6e6e6;
 }
