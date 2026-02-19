@@ -50,6 +50,6 @@ nav a {
 
 /* Hover Effect */
 nav a:hover {
-    background-color: #1e7e34;
+    background-color: lightblue;
     transform: scale(1.08);
 }
